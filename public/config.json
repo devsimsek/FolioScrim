@@ -104,7 +104,7 @@
     ],
     "ogImage": "/images/portfolio.jpg",
     "twitterHandle": "@devsimsek",
-    "siteUrl": "https://smsk.dev"
+    "siteUrl": "https://devsimsek.github.io/FolioScrim"
   },
   "features": {
     "enableAnimations": true,
@@ -180,15 +180,30 @@
     "enableSourceMaps": true,
     "enableBundleAnalyzer": false
   },
+  "deployment": {
+    "platform": "github-pages",
+    "baseUrl": "https://devsimsek.github.io/FolioScrim/",
+    "basePath": "/FolioScrim/",
+    "environment": "production",
+    "customDomain": "",
+    "enableCustomDomain": false
+  },
   "metadata": {
     "projectName": "FolioScrim",
     "version": "2.0.0",
-    "lastUpdated": "2024-01-15",
+    "lastUpdated": "2025-05-21",
     "author": "Metin Şimşek",
     "license": "MIT",
     "repository": "https://github.com/devsimsek/folioscrim",
     "description": "Transform your portfolio like a theater scrim with JSON configuration",
-    "homepage": "https://folioscrim.dev",
-    "keywords": ["portfolio", "react", "vite", "json-config", "responsive", "theme-switching"]
+    "homepage": "https://devsimsek.github.io/FolioScrim",
+    "keywords": [
+      "portfolio",
+      "react",
+      "vite",
+      "json-config",
+      "responsive",
+      "theme-switching"
+    ]
   }
 }

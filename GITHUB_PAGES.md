@@ -1,40 +1,49 @@
 # 🚀 GitHub Pages Deployment Guide
 
-Simple guide to deploy your **FolioScrim** portfolio to GitHub Pages.
+Complete guide to deploy your **FolioScrim** portfolio to GitHub Pages with the new deployment configuration system.
 
 ## ⚡ Quick Setup
 
-### 1. **Push to GitHub**
-```bash
-git add .
-git commit -m "🎭 Initial FolioScrim setup"
-git push origin main
-```
-
-### 2. **Enable GitHub Pages**
-1. Go to your repository on GitHub
-2. Click **Settings** tab
-3. Scroll to **Pages** section
-4. Under **Source**, select **GitHub Actions**
-5. That's it! The workflow will automatically deploy
-
-### 3. **Your Site is Live!**
-- URL: `https://yourusername.github.io/repositoryname/`
-- Check the **Actions** tab to see deployment progress
-- First deployment takes ~2-3 minutes
-
-## 🎛️ Configuration
-
-### Update Your Config
-Make sure your `config.json` has the correct site URL:
+### 1. **Configure Deployment Settings**
+Update your `config.json` with your GitHub Pages URL:
 
 ```json
 {
+  "deployment": {
+    "platform": "github-pages",
+    "baseUrl": "https://yourusername.github.io/repositoryname/",
+    "basePath": "/repositoryname/",
+    "environment": "production",
+    "customDomain": "",
+    "enableCustomDomain": false
+  },
   "seo": {
     "siteUrl": "https://yourusername.github.io/repositoryname"
   }
 }
 ```
+
+### 2. **Push to GitHub**
+```bash
+git add .
+git commit -m "🎭 Configure FolioScrim for GitHub Pages"
+git push origin main
+```
+
+### 3. **Enable GitHub Pages**
+1. Go to your repository on GitHub
+2. Click **Settings** tab
+3. Scroll to **Pages** section
+4. Under **Source**, select **GitHub Actions**
+5. The workflow will automatically deploy with correct paths
+
+### 4. **Your Site is Live!**
+- URL: `https://yourusername.github.io/repositoryname/`
+- Check the **Actions** tab to see deployment progress
+- First deployment takes ~2-3 minutes
+- All assets will load correctly with the new path system
+
+## 🎛️ Configuration System
 
 ### Repository Settings
 - Repository must be **public** (for free GitHub accounts)

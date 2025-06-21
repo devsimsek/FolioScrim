@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useConfig } from '../hooks/useConfig';
 
 export default function SEOManager() {
-  const { personal, seo, getConfig } = useConfig();
+  const { personal, seo, getConfig, getAssetUrl } = useConfig();
 
   useEffect(() => {
     if (!personal || !seo) return;
@@ -44,7 +44,7 @@ export default function SEOManager() {
       updateMetaTag('og:url', seo.siteUrl || window.location.href, true);
       updateMetaTag('og:title', title, true);
       updateMetaTag('og:description', seo.description || personal.about, true);
-      updateMetaTag('og:image', seo.ogImage || personal.profileImage, true);
+      updateMetaTag('og:image', getAssetUrl(seo.ogImage || personal.profileImage), true);
       updateMetaTag('og:site_name', personal.name, true);
 
       // Twitter Card tags
@@ -52,7 +52,7 @@ export default function SEOManager() {
       updateMetaTag('twitter:url', seo.siteUrl || window.location.href);
       updateMetaTag('twitter:title', title);
       updateMetaTag('twitter:description', seo.description || personal.about);
-      updateMetaTag('twitter:image', seo.ogImage || personal.profileImage);
+      updateMetaTag('twitter:image', getAssetUrl(seo.ogImage || personal.profileImage));
       
       if (seo.twitterHandle) {
         updateMetaTag('twitter:creator', seo.twitterHandle);
@@ -82,7 +82,7 @@ export default function SEOManager() {
           "jobTitle": personal.title,
           "description": personal.about,
           "url": seo.siteUrl || window.location.href,
-          "image": seo.ogImage || personal.profileImage,
+          "image": getAssetUrl(seo.ogImage || personal.profileImage),
           "email": `mailto:${personal.email}`,
           "sameAs": []
         };

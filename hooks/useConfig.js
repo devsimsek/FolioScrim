@@ -65,7 +65,12 @@ export const useConfig = () => {
 
       try {
         setLoading(true);
-        const response = await fetch('/config.json');
+        // Try to get deployment config from build-time definition
+        const deploymentConfig = typeof __DEPLOYMENT_CONFIG__ !== 'undefined' ? __DEPLOYMENT_CONFIG__ : { basePath: '/' };
+        const basePath = deploymentConfig.basePath || '/';
+        const configUrl = basePath === '/' ? '/config.json' : `${basePath}config.json`;
+        
+        const response = await fetch(configUrl);
 
         if (!response.ok) {
           throw new Error(`Failed to load config: ${response.status}`);
@@ -119,6 +124,17 @@ export const useConfig = () => {
       }));
   };
 
+  // Helper function to get deployment-aware asset URLs
+  const getAssetUrl = (path) => {
+    const deploymentConfig = config.deployment || { basePath: '/' };
+    const basePath = deploymentConfig.basePath || '/';
+    
+    if (path.startsWith('/')) {
+      return basePath === '/' ? path : `${basePath}${path.substring(1)}`;
+    }
+    return path;
+  };
+
   // Helper function to get theme colors for current theme
   const getThemeColors = (themeName) => {
     return getConfig(`theme.colors.${themeName}`, defaultConfig.theme.colors.dark);
@@ -150,6 +166,7 @@ export const useConfig = () => {
     getConfig,
     getEnabledSocialLinks,
     getThemeColors,
+    getAssetUrl,
     updateConfig,
 
     // Commonly used config sections for convenience

@@ -180,6 +180,14 @@
     "enableSourceMaps": true,
     "enableBundleAnalyzer": false
   },
+  "deployment": {
+    "platform": "github-pages",
+    "baseUrl": "https://devsimsek.github.io/FolioScrim/",
+    "basePath": "/FolioScrim/",
+    "environment": "production",
+    "customDomain": "",
+    "enableCustomDomain": false
+  },
   "metadata": {
     "projectName": "FolioScrim",
     "version": "2.0.0",
