@@ -1,0 +1,194 @@
+{
+  "personal": {
+    "name": "Metin Şimşek",
+    "title": "Software Engineer",
+    "tagline": "Engineer",
+    "email": "hello@smsk.dev",
+    "websites": [
+      {
+        "name": "smsk.dev",
+        "url": "https://smsk.dev"
+      },
+      {
+        "name": "smsksoft.com",
+        "url": "https://smsksoft.com"
+      }
+    ],
+    "profileImage": "/images/portfolio.jpg",
+    "about": "I'm a passionate software engineer and technology enthusiast with expertise in full-stack development, mobile applications, and system architecture. I enjoy building innovative solutions and contributing to open-source projects. With a strong background in modern web technologies and a keen interest in emerging tech trends, I strive to create efficient, scalable, and user-friendly applications.",
+    "interests": "My interests span across software development, open-source contributions, mobile app development, web technologies, system design, and emerging technologies like AI and machine learning. I'm also passionate about sharing knowledge through writing technical content and mentoring fellow developers. When not coding, I enjoy exploring new programming languages, contributing to the developer community, and staying updated with the latest tech innovations."
+  },
+  "social": {
+    "linkedin": {
+      "enabled": true,
+      "url": "https://linkedin.com/in/devsimsek",
+      "label": "Visit LinkedIn Profile"
+    },
+    "mastodon": {
+      "enabled": true,
+      "url": "https://universeodon.com/@devsimsek",
+      "label": "Follow on Mastodon"
+    },
+    "pixelfed": {
+      "enabled": true,
+      "url": "https://pixelfed.social/@devsimsek",
+      "label": "Follow on Pixelfed"
+    },
+    "github": {
+      "enabled": true,
+      "url": "https://github.com/devsimsek",
+      "label": "View GitHub Repositories"
+    },
+    "twitter": {
+      "enabled": false,
+      "url": "",
+      "label": "Follow on Twitter"
+    },
+    "instagram": {
+      "enabled": false,
+      "url": "",
+      "label": "Follow on Instagram"
+    },
+    "youtube": {
+      "enabled": false,
+      "url": "",
+      "label": "Subscribe on YouTube"
+    },
+    "medium": {
+      "enabled": false,
+      "url": "",
+      "label": "Read on Medium"
+    }
+  },
+  "theme": {
+    "defaultTheme": "dark",
+    "allowThemeToggle": true,
+    "colors": {
+      "light": {
+        "backgroundPrimary": "linear-gradient(135deg, rgb(245, 246, 250) 0%, rgb(225, 230, 240) 100%)",
+        "backgroundSecondary": "rgb(255, 255, 255)",
+        "textPrimary": "#1a1a1a",
+        "textSecondary": "#666",
+        "accentPrimary": "#0066cc",
+        "accentSecondary": "#004499",
+        "shadowPrimary": "rgba(0, 0, 0, 0.08)",
+        "shadowHover": "rgba(0, 0, 0, 0.12)",
+        "footerBg": "#f8f9fa",
+        "borderColor": "rgba(0, 0, 0, 0.1)"
+      },
+      "dark": {
+        "backgroundPrimary": "linear-gradient(135deg, rgb(32, 33, 39) 0%, rgb(20, 21, 25) 100%)",
+        "backgroundSecondary": "rgb(25, 26, 30)",
+        "textPrimary": "#fff",
+        "textSecondary": "#918E9B",
+        "accentPrimary": "#61dafb",
+        "accentSecondary": "#21b3d4",
+        "shadowPrimary": "rgba(0, 0, 0, 0.1)",
+        "shadowHover": "rgba(0, 0, 0, 0.15)",
+        "footerBg": "#161619",
+        "borderColor": "rgba(255, 255, 255, 0.1)"
+      }
+    }
+  },
+  "seo": {
+    "title": "Metin Şimşek - Software Engineer | smsk.dev",
+    "description": "Software Engineer passionate about full-stack development, mobile applications, and system architecture. Building innovative solutions and contributing to open-source projects.",
+    "keywords": [
+      "software engineer",
+      "full-stack developer",
+      "mobile apps",
+      "web development",
+      "React",
+      "JavaScript",
+      "open source"
+    ],
+    "ogImage": "/images/portfolio.jpg",
+    "twitterHandle": "@devsimsek",
+    "siteUrl": "https://smsk.dev"
+  },
+  "features": {
+    "enableAnimations": true,
+    "enableHoverEffects": true,
+    "enableLoadingSpinner": true,
+    "enableErrorBoundary": true,
+    "enableAccessibility": true,
+    "enableSEO": true,
+    "enableAnalytics": false,
+    "googleAnalyticsId": "",
+    "enableContactForm": false,
+    "enableBlog": false,
+    "enableProjects": false
+  },
+  "ui": {
+    "cardMaxWidth": "540px",
+    "borderRadius": "0.4rem",
+    "animationDuration": "0.3s",
+    "animationEasing": "ease",
+    "fontFamily": "Inter, sans-serif",
+    "fontSize": {
+      "base": "1rem",
+      "heading1": "2rem",
+      "heading2": "1.5rem",
+      "heading4": "1.25rem",
+      "small": "0.875rem"
+    },
+    "spacing": {
+      "xs": "0.25rem",
+      "sm": "0.5rem",
+      "md": "1rem",
+      "lg": "1.5rem",
+      "xl": "2rem",
+      "xxl": "2.5rem"
+    },
+    "breakpoints": {
+      "mobile": "768px",
+      "tablet": "1024px",
+      "desktop": "1200px"
+    }
+  },
+  "contact": {
+    "enableEmailButton": true,
+    "enableLinkedInButton": true,
+    "emailSubject": "Hello from your portfolio!",
+    "buttons": {
+      "email": {
+        "text": "Email",
+        "style": "light"
+      },
+      "linkedin": {
+        "text": "LinkedIn",
+        "style": "linkedin"
+      }
+    }
+  },
+  "footer": {
+    "height": "64px",
+    "socialIconSize": "20px",
+    "socialGap": "2rem",
+    "enableHoverEffects": true,
+    "showLabels": false
+  },
+  "performance": {
+    "enableLazyLoading": true,
+    "enableImageOptimization": true,
+    "enableCodeSplitting": true,
+    "enableServiceWorker": false
+  },
+  "development": {
+    "showConfigEditor": false,
+    "enableHotReload": true,
+    "enableSourceMaps": true,
+    "enableBundleAnalyzer": false
+  },
+  "metadata": {
+    "projectName": "FolioScrim",
+    "version": "2.0.0",
+    "lastUpdated": "2024-01-15",
+    "author": "Metin Şimşek",
+    "license": "MIT",
+    "repository": "https://github.com/devsimsek/folioscrim",
+    "description": "Transform your portfolio like a theater scrim with JSON configuration",
+    "homepage": "https://folioscrim.dev",
+    "keywords": ["portfolio", "react", "vite", "json-config", "responsive", "theme-switching"]
+  }
+}
