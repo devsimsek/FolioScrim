@@ -66,16 +66,16 @@ export const useConfig = () => {
       try {
         setLoading(true);
         const response = await fetch('/config.json');
-        
+
         if (!response.ok) {
           throw new Error(`Failed to load config: ${response.status}`);
         }
-        
+
         const configData = await response.json();
-        
+
         // Merge with default config to ensure all required fields exist
         const mergedConfig = mergeDeep(defaultConfig, configData);
-        
+
         configCache = mergedConfig;
         setConfig(mergedConfig);
         setError(null);
@@ -96,7 +96,7 @@ export const useConfig = () => {
   const getConfig = (path, fallback = null) => {
     const keys = path.split('.');
     let current = config;
-    
+
     for (const key of keys) {
       if (current && typeof current === 'object' && key in current) {
         current = current[key];
@@ -104,7 +104,7 @@ export const useConfig = () => {
         return fallback;
       }
     }
-    
+
     return current;
   };
 
@@ -129,7 +129,7 @@ export const useConfig = () => {
     const keys = path.split('.');
     const newConfig = { ...config };
     let current = newConfig;
-    
+
     for (let i = 0; i < keys.length - 1; i++) {
       const key = keys[i];
       if (!(key in current) || typeof current[key] !== 'object') {
@@ -137,7 +137,7 @@ export const useConfig = () => {
       }
       current = current[key];
     }
-    
+
     current[keys[keys.length - 1]] = value;
     setConfig(newConfig);
     configCache = newConfig;
@@ -151,7 +151,7 @@ export const useConfig = () => {
     getEnabledSocialLinks,
     getThemeColors,
     updateConfig,
-    
+
     // Commonly used config sections for convenience
     personal: config.personal || defaultConfig.personal,
     social: config.social || defaultConfig.social,
@@ -167,7 +167,7 @@ export const useConfig = () => {
 // Deep merge utility function
 function mergeDeep(target, source) {
   const output = { ...target };
-  
+
   if (isObject(target) && isObject(source)) {
     Object.keys(source).forEach(key => {
       if (isObject(source[key])) {
@@ -181,7 +181,7 @@ function mergeDeep(target, source) {
       }
     });
   }
-  
+
   return output;
 }
 
