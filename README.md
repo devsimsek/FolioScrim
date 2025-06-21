@@ -160,20 +160,6 @@ The portfolio supports 8+ social media platforms (all configurable):
 }
 ```
 
-## 🚀 Deployment
-
-The built application is a static site that can be deployed to:
-- **Vercel** (recommended for Vite projects)
-- **Netlify**
-- **GitHub Pages**
-- **Any static hosting service**
-
-### Build Output
-```bash
-npm run build
-# Generates optimized files in /dist directory
-```
-
 ## 🎛️ JSON Configuration System
 
 This portfolio uses a comprehensive JSON configuration system that allows you to customize **everything** without touching any code. Simply edit the `config.json` file!
@@ -303,54 +289,9 @@ Enable/disable functionality:
 - **📱 Responsive** - All settings respect responsive design
 - **♿ Accessibility** - Configuration respects accessibility preferences
 
-### 📖 Complete Configuration Reference
+## 📖 Configuration Examples
 
-See the full `config.json` file for all available options including:
-- Contact button customization
-- Footer styling options
-- Performance settings
-- Development options
-- Metadata configuration
-
-## 📈 Performance
-
-- **Lighthouse Score**: 95+ on all metrics
-- **Bundle Size**: < 200KB gzipped
-- **First Paint**: < 1s
-- **Tree Shaking**: Automatic unused code elimination
-- **Image Optimization**: WebP support with fallbacks
-
-## 🐛 Error Handling
-
-- **Error Boundaries** catch React errors gracefully
-- **Loading States** provide user feedback
-- **Fallback UI** for failed states
-- **Console Logging** for debugging
-
-## 🧪 Browser Support
-
-- **Modern Browsers**: Chrome 90+, Firefox 88+, Safari 14+
-- **ES6+ Features**: Full support
-- **CSS Grid & Flexbox**: Full support
-- **Progressive Enhancement**: Graceful degradation
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 🎛️ Configuration Examples
-
-### 🚀 Quick Start Examples
-
-#### **Minimal Configuration**
+### **Minimal Configuration**
 ```json
 {
   "personal": {
@@ -364,7 +305,7 @@ This project is open source and available under the [MIT License](LICENSE).
 }
 ```
 
-#### **Full Professional Setup**
+### **Full Professional Setup**
 ```json
 {
   "personal": {
@@ -395,9 +336,7 @@ This project is open source and available under the [MIT License](LICENSE).
 }
 ```
 
-## 🔧 Advanced Configuration
-
-### **🎨 Custom Theme Colors**
+### **Custom Theme Colors**
 ```json
 {
   "theme": {
@@ -412,7 +351,7 @@ This project is open source and available under the [MIT License](LICENSE).
 }
 ```
 
-### **⚙️ Performance Optimization**
+### **Performance Optimization**
 ```json
 {
   "features": {
@@ -426,18 +365,49 @@ This project is open source and available under the [MIT License](LICENSE).
 }
 ```
 
-### **📱 Mobile-First Design**
-```json
-{
-  "ui": {
-    "breakpoints": {
-      "mobile": "640px",
-      "tablet": "768px", 
-      "desktop": "1024px"
-    }
-  }
-}
+## 🚀 Deployment
+
+The built application is a static site that can be deployed to:
+- **Vercel** (recommended for Vite projects)
+- **Netlify**
+- **GitHub Pages**
+- **Any static hosting service**
+
+### Build Output
+```bash
+npm run build
+# Generates optimized files in /dist directory
 ```
+
+## 📈 Performance
+
+- **Lighthouse Score**: 95+ on all metrics
+- **Bundle Size**: < 200KB gzipped
+- **First Paint**: < 1s
+- **Tree Shaking**: Automatic unused code elimination
+- **Image Optimization**: WebP support with fallbacks
+
+## 🐛 Error Handling
+
+- **Error Boundaries** catch React errors gracefully
+- **Loading States** provide user feedback
+- **Fallback UI** for failed states
+- **Console Logging** for debugging
+
+## 🧪 Browser Support
+
+- **Modern Browsers**: Chrome 90+, Firefox 88+, Safari 14+
+- **ES6+ Features**: Full support
+- **CSS Grid & Flexbox**: Full support
+- **Progressive Enhancement**: Graceful degradation
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Update `config.json` for new features
+4. Test thoroughly with different configurations
+5. Submit a pull request
 
 ## 📞 Contact & Support
 
@@ -447,14 +417,6 @@ This project is open source and available under the [MIT License](LICENSE).
 - 📱 **Social**: Configure in `social` section
 - 💼 **LinkedIn**: Enable in `social.linkedin`
 - 🐙 **GitHub**: Enable in `social.github`
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Update `config.json` for new features
-4. Test thoroughly with different configurations
-5. Submit a pull request
 
 ## 📄 License
 
